@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.AddProperties">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_property_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.example.ecommerce.utils.MSPTextViewBold
+            android:id="@+id/ap_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Divider"
+            android:paddingTop="15dp"
+            android:text="@string/menu_add_property"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_text_size">
+        </com.example.ecommerce.utils.MSPTextViewBold>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_property_activity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_dtl_adp"
+                android:layout_width="171dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/et_text_size"
+                android:layout_marginTop="@dimen/et_text_size"
+                android:drawableLeft="@drawable/ic_baseline_people_outline_24"
+                android:gravity="center"
+                android:text="User Details"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/et_text_size"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:hint="@string/adp_name"
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_dtl_adp">
+
+                <com.example.ecommerce.utils.MSPEditText
+
+                    android:id="@+id/et_adp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/et_text_size" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_adp_phone"
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adp_name">
+
+                <com.example.ecommerce.utils.MSPEditText
+                    android:id="@+id/et_adp_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/et_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/et_hint_email_id"
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_phone">
+
+                <com.example.ecommerce.utils.MSPEditText
+                    android:id="@+id/et_adp_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/et_text_size"
+                    tools:layout_editor_absoluteX="7dp"
+                    tools:layout_editor_absoluteY="332dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/adp_purpose"
+                android:layout_width="171dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/et_text_size"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_outline_24"
+                android:gravity="center"
+                android:text="Purpose"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_email" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButtonGroup2"
+                android:layout_width="357dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/adp_purpose"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/btnLeft"
+                    style="@style/ButtonWithIconOnly"
+                    android:layout_width="174dp"
+                    android:layout_height="match_parent"
+                    android:text="Sell" />
+
+                <Button
+                    android:id="@+id/btn_right"
+                    style="@style/ButtonWithIconOnly"
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:text="Rent" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <TextView
+                android:id="@+id/tv_adp_lc"
+                android:layout_width="156dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                android:text="  Locations"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroup2" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/simpleSpinner2"
+                android:layout_width="307dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="@dimen/et_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_adp_lc" />
+
+            <TextView
+                android:id="@+id/tv_adp_typ"
+                android:layout_width="171dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/et_text_size"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:gravity="center"
+                android:text="Property Types"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/simpleSpinner2" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButtonGroup3"
+                android:layout_width="357dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_adp_typ"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/btnLeft2"
+                    style="@style/ButtonWithIconOnly"
+                    android:layout_width="174dp"
+                    android:layout_height="match_parent"
+                    android:text="Residential" />
+
+                <Button
+                    android:id="@+id/btn_right2"
+                    style="@style/ButtonWithIconOnly"
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:text="Commercial" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="301dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="Submit Property"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroup3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

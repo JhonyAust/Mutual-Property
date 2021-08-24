@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MutualProperty</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mutual Property</string>
+    <string name="nav_header_subtitle">riyadh@mutual-property.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_bottom1">NO#1</string>
+    <string name="splash_bottom2">  REAL ESTATE ONLINE PLATFORM</string>
+    <string name="splash_bottom3">IN BANGLADESH</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_add_property">Add Property</string>
+    <string name="menu_search">New Search</string>
+    <string name="menu_favourite_properties">Favourite Properties</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="create_an_account">Sign Up / Sign In</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="et_hint_email_id">Email ID</string>
+    <string name="et_hint_password">Password</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+
+    <string name="i_agree_to_the_terms_and_condition">I Agree To The <u> Terms &amp; Condition</u></string>
+    <string name="btn_lbl_register">Complete Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Sign In</string>
+    <string name="content_description">image</string>
+
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="btn_lbl_login">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="wc">Welcome To Mutual Property</string>
+    <string name="title_forgot_password">Forgot Password?</string>
+    <string name="forgot_password_title_description">Enter your e-mail address we\'ll send you a email to reset your password</string>
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="search">Filters</string>
+    <string name="keywords"> Keywords</string>
+    <string name="adp_name">Name</string>
+    <string name="hint_adp_phone">Phone</string>
+    <string name="userdetails">User Details</string>
+    <string name="btn_adp_submit">Submit Property</string>
+    <string-array name="cities">
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Rajshahi</item>
+        <item>Sylhet</item>
+        <item>Rangpur</item>
+        <item>Khulna</item>
+    </string-array>
+
+
+</resources>
